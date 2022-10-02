@@ -1,0 +1,41 @@
+<section class="">
+  <div class="container mt-5 border solid shadow-lg p-3 mb-5 bg-white rounded">
+    <div class="row d-flex justify-content-center">
+      <h2 class="text-center fs-1">Login</h2>
+      <div class="col-md-6">
+        <form action="/login" method="post">
+          <div class="mb-3">
+            <label class="form-label fs-4">Email address</label>
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">We'll never share your email
+              with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fs-4">password</label>
+            <input
+              name="password"
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          {{#if statusBar}}
+            <span class="text-danger fw-bolder">Invalid Username and Password!!</span>
+          {{/if}}
+
+          <div class="mb-3">
+            <a href="#" class="text-decoration-none">Create a new account ?</a>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
